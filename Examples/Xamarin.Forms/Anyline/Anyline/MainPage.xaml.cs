@@ -15,14 +15,15 @@ namespace Anyline
 
             var scanMode_configurations = new List<KeyValuePair<string, string>>()
             {
-                new KeyValuePair<string, string>("Barcode","others_config_barcode"),
-                new KeyValuePair<string, string>("License Plate","vehicle_config_license_plate"),
-                new KeyValuePair<string, string>("Meter","energy_config_analog_digital"),
-                new KeyValuePair<string, string>("USNR","mro_config_usnr")
+                //new KeyValuePair<string, string>("Barcode","others_config_barcode"),
+                new KeyValuePair<string, string>("Scan Plate","vehicle_config_license_plate"),
+                new KeyValuePair<string, string>("Manual Entry","vehicle_config_license_plate"),
+                //new KeyValuePair<string, string>("Meter","energy_config_analog_digital"),
+                //new KeyValuePair<string, string>("USNR","mro_config_usnr")
             };
 
             // YOUR LICENSE KEY HERE
-            string licenseKey = "ewogICJsaWNlbnNlS2V5VmVyc2lvbiI6IDIsCiAgImRlYnVnUmVwb3J0aW5nIjogIm9uIiwKICAiaW1hZ2VSZXBvcnRDYWNoaW5nIjogdHJ1ZSwKICAibWFqb3JWZXJzaW9uIjogIjI1IiwKICAibWF4RGF5c05vdFJlcG9ydGVkIjogNSwKICAiYWR2YW5jZWRCYXJjb2RlIjogdHJ1ZSwKICAibXVsdGlCYXJjb2RlIjogdHJ1ZSwKICAic3VwcG9ydGVkQmFyY29kZUZvcm1hdHMiOiBbCiAgICAiQUxMIgogIF0sCiAgInBpbmdSZXBvcnRpbmciOiB0cnVlLAogICJwbGF0Zm9ybSI6IFsKICAgICJpT1MiLAogICAgIkFuZHJvaWQiCiAgXSwKICAic2NvcGUiOiBbCiAgICAiQUxMIgogIF0sCiAgInNob3dQb3BVcEFmdGVyRXhwaXJ5IjogdHJ1ZSwKICAic2hvd1dhdGVybWFyayI6IHRydWUsCiAgInRvbGVyYW5jZURheXMiOiA5MCwKICAidmFsaWQiOiAiMjAyMS0wNi0zMCIsCiAgImlvc0lkZW50aWZpZXIiOiBbCiAgICAiY29tLmFueWxpbmUueGFtYXJpbi5leGFtcGxlcyIsCiAgICAiY29tLmFueWxpbmUueGFtYXJpbi5mb3Jtcy5leGFtcGxlcyIKICBdLAogICJhbmRyb2lkSWRlbnRpZmllciI6IFsKICAgICJjb20uYW55bGluZS54YW1hcmluLmV4YW1wbGVzIiwKICAgICJjb20uYW55bGluZS54YW1hcmluLmZvcm1zLmV4YW1wbGVzIgogIF0KfQpJbHE1REZNMU03QzEzNGJiaGo4dm9zMEFEVjEzNm1HbWNEYmdUbUdoWTd3dDlrR0gyYTRyK3RjeDJLYTNZN3d3R1EweThWeFZvZWVmQU5NWEtycm04bGkzN1MzKzdjWTU1dUZ1RVJPUkR6bmd3aCtYMmU3VGtkNDhiemd5Y1JpdnZkM09LZ3JiNDRUbDBycHExc2dOZVVzVVozRnEwd3dFM2VMQWx3VkFrdkRiVjdOdktaMEF5M3J6Mmg0TGNuTmpQTHErOTE0VmVPZUNDVUo3aU9VMW5vWUJKUlBqdDFmWHpqS1dOZmNXRXNPTlJrMVNaMUFzaXREZzNCMHVuZXZLSVNBWXRZT0hTL01DWDlseVlHS05acWQxODBrOXhscUVpbVVYTjc4UnFHd2ZLRFF2SFpoTWp4LzFzVFVrZXI4aFpNcGNtb0c5NWJMSjhoTlFRNjNuZ2c9PQ";
+            string licenseKey = "eyJzY29wZSI6WyJBTEwiXSwicGxhdGZvcm0iOlsiaU9TIiwiQW5kcm9pZCIsIldpbmRvd3MiLCJKUyIsIldlYiJdLCJ2YWxpZCI6IjIwMjAtMTItMjYiLCJtYWpvclZlcnNpb24iOjMsIm1heERheXNOb3RSZXBvcnRlZCI6NSwic2hvd1dhdGVybWFyayI6dHJ1ZSwicGluZ1JlcG9ydGluZyI6dHJ1ZSwiZGVidWdSZXBvcnRpbmciOiJvcHQtb3V0IiwidG9sZXJhbmNlRGF5cyI6NSwic2hvd1BvcFVwQWZ0ZXJFeHBpcnkiOnRydWUsImlvc0lkZW50aWZpZXIiOlsiY29tLnZpbmRleC5hdXRvcnVsZS5tb2JpbGUiXSwiYW5kcm9pZElkZW50aWZpZXIiOlsiY29tLnZpbmRleC5hdXRvcnVsZS5tb2JpbGUiXSwid2luZG93c0lkZW50aWZpZXIiOlsiY29tLnZpbmRleC5hdXRvcnVsZS5tb2JpbGUiXSwid2ViSWRlbnRpZmllciI6WyJjb20udmluZGV4LmF1dG9ydWxlLm1vYmlsZSJdLCJqc0lkZW50aWZpZXIiOlsiY29tLnZpbmRleC5hdXRvcnVsZS5tb2JpbGUiXSwiaW1hZ2VSZXBvcnRDYWNoaW5nIjp0cnVlLCJsaWNlbnNlS2V5VmVyc2lvbiI6Mn0KSC9GSkNBeWg5Mmd0NHcvM0hOQ1drcjlOSytSQWpvRjh3S2dBcm9tRzJyY3U0MGJjRTIrZ2o2cU15V0k2dTMvZXBpbWhtK1RBQkh6NXFpbnQrSkFSeWM1disyRDBPTFJBVVB1amxxM1F4K01BcldHbDNEOEQzMXk0Q1o2UDBjUnN1bVZDS25zdlhJSVJjRVBmWTFMa3FwcWhEN0psdTA5T1VvN0lJUUZvVWxmaTZDcU8wQzlNbm0wOFYzL0FnMDZNa3NOQjlTb09JQm5LanoxdXpYa0ZMQUNYWndCZmVmWHN1L201eUJrcG0xMHNUbmZEcUY5d0t4LzFyVkFNVGp6RWYyelZpdnJ5cWc3RC9UZi9yV1VGZHdLRmFFM08zeVVLV2c4QUpORkQva2l6OTlUZFdzOC8wSFFKM0JtTnoxRFhudnVYUVBtRHYrSDUydUpXMkl4a0pBPT0=";
 
             // Initializes the Anyline SDK natively in each platform and get the results back
             bool isAnylineInitialized = DependencyService.Get<IAnylineSDKService>().SetupWithLicenseKey(licenseKey, out string licenseErrorMessage);
@@ -39,7 +40,7 @@ namespace Anyline
         {
             foreach (var item in scanModes_Configurations)
             {
-                var btScan = new Button() { Text = item.Key, BackgroundColor = Color.FromHex("32ADFF"), TextColor = Color.White };
+                var btScan = new Button() { Text = item.Key, BackgroundColor = Color.FromHex("77A22F"), TextColor = Color.White }; //was 32ADFF
                 btScan.Clicked += BtScan_Clicked;
                 btScan.ClassId = item.Value;
                 btScan.IsEnabled = isEnabled;

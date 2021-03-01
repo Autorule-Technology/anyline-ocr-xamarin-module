@@ -16,7 +16,7 @@ namespace Anyline
         public ScanExamplePage(string configurationFile)
         {
             BackgroundColor = Color.Black;
-            Title = "Anyline Xamarin Module";
+            Title = "Scan Plate";
             ConfigurationFile = configurationFile;
 
             ShowResultsAction += (r) =>

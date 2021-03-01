@@ -12,7 +12,7 @@ namespace Anyline
 
             MainPage = new NavigationPage(new MainPage())
             {
-                BarBackgroundColor = Color.FromHex("32ADFF"),
+                BarBackgroundColor = Color.FromHex("77A22F"),
                 BarTextColor = Color.White
             };
         }

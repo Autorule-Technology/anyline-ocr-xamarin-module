@@ -1,6 +1,6 @@
 ﻿{
   "camera": {
-    "captureResolution": "720",
+    "captureResolution": "1080",
     "zoomGesture": true
   },
   "flash": {
@@ -9,7 +9,7 @@
   },
   "viewPlugin": {
     "plugin": {
-      "id": "LICENSE_PLATE_PLUGIN",
+      "id": "Demo01",
       "licensePlatePlugin": {
       }
     },

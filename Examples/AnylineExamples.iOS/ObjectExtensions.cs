@@ -88,13 +88,6 @@ namespace AnylineExamples.iOS
                                             resultArray.GetItem<Foundation.NSObject>(i).CreatePropertyDictionary().ToList().ForEach(x => dict.AddProperty(x.Key, x.Value));
                                         }
                                     }
-                                    else if (value is System.Array array)
-                                    {
-                                        for (int i = 0; i < array.Length; i++)
-                                        {
-                                            array.GetValue(i).CreatePropertyDictionary().ToList().ForEach(x => dict.AddProperty(x.Key, x.Value));
-                                        }
-                                    }
                                     else
                                     {
                                         dict.AddProperty(prop.Name, value);
@@ -137,6 +130,8 @@ namespace AnylineExamples.iOS
         /// <param name="value"></param>
         public static void AddProperty(this Dictionary<string, object> dict, string name, object value)
         {
+
+            Debug.WriteLine("{0}: {1}", name, value);
             if (value != null)
             {
                 if (value is ALMRZIdentification

@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Anyline.ResultsPage"
-             Title="Scan Results"
+             Title="Plate"
              BackgroundColor="#1A1A1A">
 
     <ContentPage.Content>
@@ -17,8 +17,10 @@
                         <ColumnDefinition Width="*" />
                         <ColumnDefinition Width="*" />
                     </Grid.ColumnDefinitions>
-                    <Button x:Name="btHome" Text="Home" BackgroundColor="#32ADFF" TextColor="White" HorizontalOptions="FillAndExpand" />
-                    <Button x:Name="btScanAgain" Text="Scan again" BackgroundColor="#32ADFF" TextColor="White" Grid.Column="1" HorizontalOptions="FillAndExpand" />
+                    <Button x:Name="btHome" Text="Cancel" BackgroundColor="#77A22F" TextColor="White" HorizontalOptions="FillAndExpand" />
+                    <Button x:Name="btScanAgain" Text="Scan again" BackgroundColor="#77A22F" TextColor="White" Grid.Column="1" HorizontalOptions="FillAndExpand" />
+                    <Button x:Name="btPost" Text="Send" BackgroundColor="#77A22F" TextColor="White" Grid.Column="2" HorizontalOptions="FillAndExpand" />
+
                 </Grid>
             </StackLayout>
         </ScrollView>

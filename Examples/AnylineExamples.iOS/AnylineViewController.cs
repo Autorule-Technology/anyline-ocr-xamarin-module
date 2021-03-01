@@ -105,7 +105,7 @@ namespace AnylineExamples.iOS
             {
                 var lastItem = TableItems.Last();
                 TableItems.Remove(lastItem.Key);
-                TableItems.Add("NFC-Item", new List<ExampleModel> { new ExampleModel(ItemType.Item, "Scan NFC of Passports", Category.Workflows, "") });
+                //TableItems.Add("NFC-Item", new List<ExampleModel> { new ExampleModel(ItemType.Item, "Scan NFC of Passports", Category.Workflows, "") });
                 TableItems.Add(lastItem.Key, lastItem.Value);
             }
 

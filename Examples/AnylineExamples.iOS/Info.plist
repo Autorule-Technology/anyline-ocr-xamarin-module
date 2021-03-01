@@ -3,18 +3,18 @@
 <plist version="1.0">
 <dict>
 	<key>CFBundleDisplayName</key>
-	<string>Xamarin.iOS Examples</string>
+	<string>AutoScan</string>
 	<key>MinimumOSVersion</key>
-	<string>12.0</string>
+	<string>11.0</string>
 	<key>UIDeviceFamily</key>
 	<array>
 		<integer>1</integer>
 		<integer>2</integer>
 	</array>
 	<key>CFBundleShortVersionString</key>
-	<string>26.1.0</string>
+	<string>1.0.0</string>
 	<key>UILaunchStoryboardName</key>
-	<string>MainStoryboard.storyboard</string>
+	<string>MainStoryboard</string>
 	<key>UIMainStoryboardFile</key>
 	<string>MainStoryboard</string>
 	<key>UISupportedInterfaceOrientations</key>
@@ -35,5 +35,7 @@
 	<string>1</string>
 	<key>CFBundleIdentifier</key>
 	<string>com.anyline.xamarin.examples</string>
+	<key>XSAppIconAssets</key>
+	<string>Assets.xcassets/AppIcon.appiconset</string>
 </dict>
 </plist>
